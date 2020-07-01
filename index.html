@@ -16,13 +16,19 @@
   body{
          font-family: 'Montserrat', sans-serif;
          }
-         h1, h2, h3, h6 {
+   h1, h2, h3, h6 {
              color: #0047BA;
              font-weight: bold;
          }
-         h4{
+   h4{
              color: #424242;
+             font-size: 16px;
          }
+         /* nav */
+ nav select {
+  display: none;
+}
+
 .lis{
     margin-bottom: 20px;
 }
@@ -30,6 +36,14 @@
     font-size: 24px !important;
     font-weight: bold;
     line-height: 150%;
+}
+.top-image{
+    /* background-image: url("images/img-1.png");  */
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
  section.pricing {
   background: white;
@@ -90,36 +104,103 @@
     opacity: 1;
   }
 }
+.canvas-span{
+  display: none; 
+}
+@media (max-width: 960px) {
+  /* nav ul     { display: none; }
+  nav select { display: inline;} */
+  .canvas { display: none;}
+  .canvas-span { display: inline;
+      color: #0047BA;
+    font-weight: bold;
+    font-size: 16px;
+line-height: 150%;
+}
+
+}
+
     </style>
+
 </head>
 
+
 <body>
+  <nav id="mainnav" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
+    <a href="#" class="navbar-brand">
+      <h1 class="canvas" style="margin-left: 20px; font-size: 30px;">THE </h1>
+        <h1 class="canvas" style="margin-left: 20px; font-size: 30px;"> CANVAS</h1>
+    </a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navlinks">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse right" id="navlinks">
+        <ul class="navbar-nav nav navbar-nav ml-auto">
+            <li class="nav-item">
+                <a href="" class="nav-link">GALLERY</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">SERVICES</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">PRICING</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">+211 7896 323</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link"><i class="fas fa-instagram" aria-hidden="false"></i></a>
+        </li>
+          <li class="nav-item">
+            <a href="" class="nav-link"><i class="fas fa-twitter" aria-hidden="false"></i></a>
+        </li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-12" style="margin: 37px;">   
+    </div>
+  </div>
+</div>
     <div class="container">
         <div class="row justify-content-center align-items-center">
-            <div class="col-sm-12 col-lg-3">
-                <p>Hello there, my name is </p>
-                <h1>THE</h1>
-                <h1>CANVAS</h1>
-                <P>I Am A Photographer based in No Man’s Land, 
+          <br/>   
+          <br/>
+            <div class="col-sm-12 col-lg-4">
+                <p>Hello there, my name is <span class="canvas-span"> THE CANVAS </span> </p>
+                <h1 class="canvas">THE </h1>
+                <h1 class="canvas"> CANVAS</h1>
+                <P style="color: #6C85AD;">I Am A Photographer based in No Man’s Land, 
                 very passionate about documenting travel in pictures.</P>
             </div>
-
-            <div class=" col-sm-12 col-lg-7">
-                <img src="images/img-1.png" class="img-fluid" alt="">
+      
+            <div class="col-sm-12 col-lg-8 bg top-image">
+                <img class="img-fluid" src="images/img-1.png"  alt="">
             </div>
 
-            <div class="col-sm-12 col-lg-2 text-center" style="list-style-type: none; color: #6C85AD; margin-bottom: 40px;">
+
+            <!-- <nav class="col-sm-12 col-lg-2 text-center" style="color: #6C85AD; margin-bottom: 40px;" >
+              <ul style="list-style-type: none;">
                 <li class="lis"><a href="#">GALLERY</a></li> 
                 <li class="lis"> <a href="#">SERVICES</a></li>
                 <li class="lis"> <a href="#">PRICING</a></li>
                 <li class="lis"> <a href="#">+211 7896 323</a></li>
                 <li class="lis"><a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i> </a></li>  
-                <li class="lis"><a href="#"> <i class="fas fa-twitter" aria-hidden="true"></i></a></li> 
-                
-            </div>
+                <li class="lis"><a href="#"> <i class="fas fa-twitter" aria-hidden="true"></i></a></li>   
+            </ul>
+            <select name="" id="">
+              <option value="#">GALLERY</option>
+              <option value="#">SERVICES</option>
+              <option value="#">PRICING</option>
+              <option value="#">+211 7896 323</option>
+              <option value="#"> <i class="fas fa-twitter" aria-hidden="false"></i></option>
+              <option value="#"> <i class="fas fa-twitter" aria-hidden="false"></i></option>
+            </select>
+            </nav> -->
+           
+
         </div>
-        <br/>
-        <br/>
         <br/>
         <br/>
 
@@ -129,30 +210,30 @@
         <p style="font-size: 14px; line-height: 150%; font-weight: bold; color: #6C85AD;">What can i do for you</p>
     </div>
     <div class="row">
+       
         <div class="col-sm-12 col-lg-5">
-            <h4>TRAVEL EDITORIALS</h4>
-            <p>I am available for your vacation or whatsoever you would like to have captures of. 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut porttitor turpis mi,
-                 in luctus orci faucibus eget. Donec commodo sit amet nisl sit amet iaculis. 
-                 Cras fermentum nisl id rhoncus viverra. Aenean elementum ipsum a euismod varius. 
-                 Nulla pulvinar efficitur tempor. Morbi pellentesque nulla nec ante vestibulum facilisis.
-                  Nullam rhoncus augue vel tristique dignissim. Duis bibendum commodo tincidunt. 
-                  Etiam condimentum placerat venenatis. Sed accumsan orci non lacus mattis,
-                 nec tristique diam sodales. Mauris tristique enim sit amet dignissim ultrices. </p>
-        </div>
-        <div class="col-sm-12 col-lg-7">
-            <img src="images/img-2.png" class="img-fluid" alt="">
-        </div>
+          <h4>TRAVEL EDITORIALS</h4>
+          <p>I am available for your vacation or whatsoever you would like to have captures of. 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut porttitor turpis mi,
+               in luctus orci faucibus eget. Donec commodo sit amet nisl sit amet iaculis. 
+               Cras fermentum nisl id rhoncus viverra. Aenean elementum ipsum a euismod varius. 
+               Nulla pulvinar efficitur tempor. Morbi pellentesque nulla nec ante vestibulum facilisis.
+                Nullam rhoncus augue vel tristique dignissim. Duis bibendum commodo tincidunt. 
+                Etiam condimentum placerat venenatis. Sed accumsan orci non lacus mattis,
+               nec tristique diam sodales. Mauris tristique enim sit amet dignissim ultrices. </p>
+      </div>
+      <div class="col-sm-12 col-lg-7 ">
+        <img src="images/img-2.png" class="img-fluid" alt="">
+    </div>
     </div>
     <br/>
     <br/>
     <div class="row">
-        <div class="col-sm-12 col-lg-7">
-            <img src="images/img-2.png" class="img-fluid" alt="">
-        </div>
+      <br/>
+      <div class="col-sm-12 col-lg-7">
+        <img src="images/img-2.png" class="img-fluid" alt="">
+    </div>
         <div class="col-sm-12 col-lg-5">
-            <br/>
-            <br/>
             <h4>TRAVEL FILMS</h4>
             <p>I am available for your vacation or whatsoever you would like to have captures of. 
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut porttitor turpis mi, 
@@ -163,11 +244,12 @@
                 Etiam condimentum placerat venenatis. Sed accumsan orci non lacus mattis, 
                 nec tristique diam sodales. Mauris tristique enim sit amet dignissim ultrices. </p>
         </div>
+       
     </div>
     <br/>
     <br/>
     <div class="row">
-        <div class="col-sm-12 col-lg-5">
+        <div class="col-sm-12 col-lg-5 col-md-6">
             <h4>TRAVEL DOCUMENTARIES</h4>
             <p>I am available for your vacation or whatsoever you would like to have captures of. 
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut porttitor turpis mi,
@@ -191,7 +273,7 @@
         <div class="col-sm-12 col-lg-4">
             <img src="images/img-5.png" class="img-fluid" alt="">
         </div>
-        <div class="col-sm-12 col-lg-5">
+        <div class="col-sm-12 col-lg-5 flex-last">
             <br/>
             <h2>ABOUT ME</h2>
             <p>I am available for your vacation or whatsoever you would like to have captures of. 
@@ -214,19 +296,17 @@
         <p style="font-size: 14px; line-height: 150%; font-weight: bold; color: #6C85AD;">What I have done for clients</p>
     </div>
     <br/> 
-    <div class="row justify-content-center">
-        <div class="col-4" style="color: #6C85AD; font-size: 16px; font-weight: bold;" >TRAVEL EDITORIALS</div>
-        <div class="col-4" style="color: #6C85AD; font-size: 16px; font-weight: bold;">TRAVEL DOCUMENTARIES</div>
-        <div class="col-4" style="color: #6C85AD; font-size: 16px; font-weight: bold;">TRAVEL FILMS</div>
-    </div>
     <div class="row">
         <div class="col-sm-12 col-lg-4">
+            <h4>TRAVEL EDITORIALS</h4>
             <img src="images/img-6.png" class="img-fluid" alt="">
         </div>
         <div class="col-sm-12 col-lg-4">
+          <h4>TRAVEL DOCUMENTARIES</h4>
             <img src="images/img-7.png" class="img-fluid" alt="">
         </div>
         <div class="col-sm-12 col-lg-4">
+          <h4>TRAVEL FILMS</h4>
             <img src="images/img-8.png" class="img-fluid" alt="">
         </div>
     </div>
@@ -407,19 +487,57 @@
         <br/>
         <br/>
   </section>
-  <section class="container" style="background-color: #D0DEF4; height: 80px;">
-      <div class="row">
-          <div class="col-8 justify-content-center align-item-center">
-              <div class="row">
-                <div class="col-2">Services</div>
-                <div class="col-2">About</div>
-                <div class="col-2">Pricing</div>
-                <div class="col-2">Contact Me</div>
-              </div>
-          </div>
-          <div class="col-4 justify-content-end">@ 2020 The Canvas. All Rights Reserved.</div>
+
+ <!-- Footer -->
+ <footer class="page-footer font-small blue pt-4" style="background-color: #D0DEF4;">
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h1 class="canvas" style="margin-left: 50px;">THE </h1>
+        <h1 class="canvas" style="margin-left: 50px;"> CANVAS</h1>
       </div>
-  </section>
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+      <div class="col-md-3 mb-md-0 mb-3">
+        <ul class="list-unstyled" style="display: inline-flexbox;">
+          <li>
+            <a href="#!">Services</a>
+          </li>
+          <li>
+            <a href="#!">About</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Pricing</a>
+          </li>
+          <li>
+            <a href="#!">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="#">The Canvas. All Rights Reserved</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
 
  <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
